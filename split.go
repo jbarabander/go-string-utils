@@ -1,10 +1,9 @@
 package stringUtils
 
 // Split splits into a slice of strings based on the string given
-func Split(str string, strToSplitOn string) []string {
+func Split(str string, separator string) []string {
 	r := []rune(str)
-	splitSlice := []rune(strToSplitOn)
-
+	splitSlice := []rune(separator)
 	splitSliceLen := len(splitSlice)
 	currSplitSliceIndex := 0
 
